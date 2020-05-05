@@ -1,6 +1,6 @@
 ---
 - name: Pull centos image
-  hosts: servera.lab.example.com
+  hosts: serveri.lab.example.com
   become: true
   
   tasks:
