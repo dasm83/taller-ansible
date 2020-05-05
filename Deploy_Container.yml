@@ -18,7 +18,10 @@
     - name: Copy index.html
       copy:
         src: index.html
-        dest: /opt/docker/index.html 
+        dest: /opt/docker/index.html
+    
+    - name: Ensure docker is running
+      command: service docker restart
 
     - name: Pull Docker Image
       docker_image:
